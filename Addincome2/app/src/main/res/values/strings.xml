@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Addincome</string>
+    <string name="add_income_textfield">Add Incomhhhhhhhe</string>
+    <string name="insertSourceOfIncomeBTN">Insert name to database</string>
+    <string name="addSourceOfIncomeTextBox">CUnusede</string>
+    <string name="addSourceOfIncomeTextBoxHint">Complete with source of income name</string>
+    <string name="deleteAllSourceOfIncomeBTN">Delete all values from source of income table</string>
+    <string name="alt">aaaaaalltltl</string>
+</resources>

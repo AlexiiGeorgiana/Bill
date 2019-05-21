@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/add_income_textbox_page"
+        android:layout_width="313dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="214dp"
+        android:text="@string/add_income_textfield"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="normal|bold|italic"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/add_to_db_source_of_income_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/add_spurce_of_income_input"
+        android:layout_width="340dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="56dp"
+        android:ems="10"
+        android:focusedByDefault="true"
+        android:hint="@string/addSourceOfIncomeTextBoxHint"
+        android:importantForAutofill="no"
+
+        android:inputType="textAutoCorrect"
+        app:layout_constraintBottom_toTopOf="@+id/add_to_db_source_of_income_name"
+        app:layout_constraintEnd_toEndOf="@+id/add_income_textbox_page"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/add_income_textbox_page"
+        tools:targetApi="o" />
+
+    <Button
+        android:id="@+id/add_to_db_source_of_income_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/insertSourceOfIncomeBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_income_textbox_page" />
+
+
+    <Button
+        android:id="@+id/alt_buton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/alt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_income_textbox_page"
+        app:layout_constraintVertical_bias="0.018" />
+
+
+</android.support.constraint.ConstraintLayout>

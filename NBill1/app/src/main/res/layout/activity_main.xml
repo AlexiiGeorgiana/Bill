@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="338dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/spent_remained_linear_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/income_linear_layout" />
+
+    <LinearLayout
+        android:id="@+id/income_linear_layout"
+        android:layout_width="263dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/calendarView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/income_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ic_launcher_background"
+            android:clickable="true"
+            android:text="@string/income_text"
+            android:textColor="@color/colorPrimary"
+            android:focusable="true" />
+
+        <EditText
+            android:id="@+id/income_textbox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ic_launcher_background"
+            android:clickable="false"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:text="@string/income_textbox"
+            android:textAlignment="center"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/spent_remained_linear_layout"
+        android:layout_width="339dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="179dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView">
+
+        <Button
+            android:id="@+id/spent_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/spent_text"
+            android:textStyle="bold|italic"
+            tools:background="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/spent_textbox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:clickable="false"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:text="@string/spent_textbox"
+            android:textAlignment="center"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/remained_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:text="@string/remained_text"
+            android:textStyle="bold|italic"
+            tools:background="@color/colorPrimaryDark"
+            android:focusable="true" />
+
+        <EditText
+            android:id="@+id/remained_textbox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:clickable="false"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="@string/remained_textbox"
+            android:textAlignment="center"
+            android:textStyle="bold|italic"
+            tools:clickable="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/navigation_buttons"
+        android:layout_width="393dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/colorAccent"
+        android:gravity="bottom|fill_horizontal|end"
+        android:orientation="horizontal"
+
+
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spent_remained_linear_layout"
+        tools:textAlignment="center">
+
+        <Button
+            android:id="@+id/income_spent_chart_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:drawableTop="@drawable/ic_insert_chart_black_24dp"
+            android:text="@string/income_spent_chart_button"
+            android:textAlignment="center"
+
+            android:textSize="10sp" />
+
+
+        <Button
+            android:id="@+id/tags_chart_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_insert_chart_black_24dp"
+            android:src="@drawable/ic_insert_chart_black_24dp"
+            android:text="@string/tags_chart_btn_text"
+            android:textAlignment="center"
+
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/tags_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_insert_chart_black_24dp"
+            android:src="@drawable/ic_insert_chart_black_24dp"
+            android:text="@string/tags_btn_text"
+            android:textAlignment="center"
+
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/ocr_scan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:drawableTop="@drawable/ic_insert_chart_black_24dp"
+
+            android:text="@string/ocr_scan"
+            android:textAlignment="center"
+
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_insert_chart_black_24dp"
+            android:src="@drawable/ic_insert_chart_black_24dp"
+            android:text="@string/add_button_text"
+            android:textAlignment="center"
+
+            android:textSize="10sp"
+            />
+
+        <Button
+            android:id="@+id/settings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_insert_chart_black_24dp"
+            android:src="@drawable/ic_insert_chart_black_24dp"
+            android:text="@string/settings"
+            android:textAlignment="center"
+
+            android:textSize="10sp" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

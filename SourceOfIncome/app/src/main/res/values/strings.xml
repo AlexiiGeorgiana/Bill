@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SourceOfIncome</string>
+    <string name="add_income_textfield">Add Income</string>
+    <string name="insertSourceOfIncomeBTN">Insert name to database</string>
+    <string name="addSourceOfIncomeTextBox">CUnusede</string>
+    <string name="addSourceOfIncomeTextBoxHint">Complete with source of income name</string>
+    <string name="deleteAllSourceOfIncomeBTN">Delete all values from source of income table</string>
+    <string name="ceva_text_test">Text de test</string>
+
+</resources>
