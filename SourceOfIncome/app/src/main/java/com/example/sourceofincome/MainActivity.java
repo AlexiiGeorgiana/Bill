@@ -9,6 +9,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+
     EditText source_of_income_add_text;
     Button btn_add_source_of_income;
     Button btn_delete_all_data_si;
@@ -30,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
         btn_add_source_of_income.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String name=source_of_income_add_text.getText().toString();
 
+                String name=source_of_income_add_text.getText().toString();
                 long row_inserted=dbOpenHelper.insertDataToSourceOFIncome(name);
                 Context context =MainActivity.this ;
                 if(row_inserted != -1) {

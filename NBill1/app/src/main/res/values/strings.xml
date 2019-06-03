@@ -16,11 +16,22 @@
     <string name="add_top_text">Add your value</string>
     <string name="tags_page_text_s">Here are your Tags!</string>
     <string name="add_tag_btn_tag_page">Add</string>
-
+    <string name="source_of_income_txt">Source of income...</string>
+    <string name="week_starts_on_btn">Week starts on...</string>
+    <string name="title_activity_week_starts_on">WeekStartsOn</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="week_starts_on_txt">Week starts on...</string>
 
     <string-array name="incomeSPENT">
         <item>Income</item>
         <item>Spent</item>
     </string-array>
+
 
 </resources>

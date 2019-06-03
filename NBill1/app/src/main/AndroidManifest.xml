@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.nbill1">
 
     <application
@@ -9,7 +10,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SettingsPage"></activity>
+        <activity android:name=".SourceOfIncome"></activity>
+        <activity
+            android:name=".WeekStartsOn"
+            android:label="@string/title_activity_week_starts_on"
+            android:parentActivityName=".SettingsPage"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nbill1.SettingsPage" />
+        </activity>
+        <activity android:name=".SettingsPage" />
         <activity android:name=".OCR" />
         <activity android:name=".TagsPage" />
         <activity android:name=".TagsChartPage" />
@@ -26,6 +37,10 @@
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
     </application>
 
 </manifest>
