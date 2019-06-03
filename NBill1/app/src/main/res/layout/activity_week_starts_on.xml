@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeekStartsOn">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutWeekStartsOn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <TextView
+            android:id="@+id/week_starts_on_txt"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:text="@string/week_starts_on_txt"
+            android:textAlignment="textStart"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/monday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/monday" />
+
+        <Button
+            android:id="@+id/tuesday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tuesday" />
+
+        <Button
+            android:id="@+id/wednesday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wednesday" />
+
+        <Button
+            android:id="@+id/thursday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/thursday" />
+
+        <Button
+            android:id="@+id/friday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/friday" />
+
+        <Button
+            android:id="@+id/saturday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/saturday" />
+
+        <Button
+            android:id="@+id/sunday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sunday" />
+
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
+
+
+
